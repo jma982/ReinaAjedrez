@@ -1,6 +1,13 @@
 package org.iesalandalus.programacion.reinaajedrez.modelo;
 
- enum Direccion {
+ enum Color{ 
+	
+	BLANCO, NEGRO;
 
-	NORTE, NORESTE, ESTE, SURESTE, SUR, SUROESTE, OESTE, NOROESTE
-}
+	String cadenaAMostrar;
+	 
+	
+	
+};
+
+ 
