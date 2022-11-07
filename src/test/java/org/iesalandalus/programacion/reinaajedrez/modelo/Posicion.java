@@ -10,6 +10,65 @@ public class Posicion {
 	private int fila;
 	private char columna; 
 	
+	// MÉTODO CONSTRUCTOR PRINCIPAL:
+	
+	public Posicion(int fila, char columna) {
+		
+		// Validación del parámetro fila en el método constructor
+		
+		do {
+			
+			try { 
+				fila=Entrada.entero();
+				this.fila=fila;
+								
+			} catch (IllegalArgumentException e){ 
+				
+				System.out.println("Error, sólo puede indicar un número del 1 al 8 " + e);
+			
+			}
+			
+			} while (fila<1 || fila >8);
+		
+		// Validación del argumento columna en el método constructor
+		
+		
+		columna=Entrada.caracter();
+		this.columna=columna; 
+		
+		try {
+			
+			switch (columna){
+			
+				case'a': System.out.println("La columna es "+columna); break;
+				case'A': System.out.println("La columna es "+columna); break;
+				case'b': System.out.println("La columna es "+columna); break;
+				case'B': System.out.println("La columna es "+columna); break;
+				case'c': System.out.println("La columna es "+columna); break;
+				case'C': System.out.println("La columna es "+columna); break;
+				case'd': System.out.println("La columna es "+columna); break;
+				case'D': System.out.println("La columna es "+columna); break;
+				case'e': System.out.println("La columna es "+columna); break;
+				case'E': System.out.println("La columna es "+columna); break;
+				case'f': System.out.println("La columna es "+columna); break;
+				case'F': System.out.println("La columna es "+columna); break;
+				case'g': System.out.println("La columna es "+columna); break;
+				case'G': System.out.println("La columna es "+columna); break;
+				case'h': System.out.println("La columna es "+columna); break;
+				case'H': System.out.println("La columna es "+columna); break;
+				default: System.out.println("Error, sólo puede indicar una letra de la 'a' la 'h' ");
+				break;
+		
+				}
+			}
+		
+			catch(IllegalArgumentException e) {
+				
+				System.out.println("Error, sólo puede indicar una letra de la 'a' la 'h' " + e);
+			}
+	}
+	
+	
 	// MÉTODO SETTER DE FILAS
 	
 	public void setFila() { 
