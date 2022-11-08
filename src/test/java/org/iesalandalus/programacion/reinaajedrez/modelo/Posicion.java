@@ -68,6 +68,12 @@ public class Posicion {
 			}
 	}
 	
+	/* COPIA DE MÉTODO CONSTRUCTOR PRINCIPAL O CONSTRUCTOR SECUNDARIO, en nuestro y para diferenciarlo
+	* del constructor principal lo hemos creado con el asistente de Eclipse*/
+	
+	public Posicion(Posicion Posicion) {
+		
+	}
 	
 	// MÉTODO SETTER DE FILAS
 	
